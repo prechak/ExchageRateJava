@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        app:srcCompat="@drawable/header_java2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewThaiFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/thbf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="THB"/>
+
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="8px"
+        android:layout_marginRight="240px"
+        android:layout_marginBottom="8px"
+        android:backgroundTint="#373"
+        android:onClick="onCliclConvet"
+        android:text="tap here to convert"
+        android:textSize="40px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewUSDFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/usdf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="USD * 31.2745"/>
+
+        <TextView
+            android:id="@+id/textView_USD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="00.00"
+            android:ems="10"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewGBPFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/gbpf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="GBP * 42.5931"/>
+
+        <TextView
+            android:id="@+id/textView_GBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewEURFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/eurf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="EUR * 36.9920"/>
+
+        <TextView
+            android:id="@+id/textView_EUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewJPYFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/jpyf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="JPY * 28.3111"/>
+
+        <TextView
+            android:id="@+id/textView_JPY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewHKDFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/hkdf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="HKD *  3.9964"/>
+
+        <TextView
+            android:id="@+id/textView_HKD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewMYRFlag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            app:srcCompat="@drawable/myrf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="MYR *  7.4826"/>
+
+        <TextView
+            android:id="@+id/textView_MYR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:layout_marginTop="140px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base on 12 April 2021 - Offine Data"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d9d9d9"
+            android:text="Powered by Precha Krasaesup"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
